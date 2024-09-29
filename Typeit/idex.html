@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"
+      defer
+    ></script>
+    <!--이거 깔아줘야함-->
+    <script src="idex.js" defer></script>
+    <link rel="stylesheet" href="idex.css" />
+    <title>타입 애니매이션</title>
+  </head>
+  <body>
+    <div>
+      <label>A Form Input</label>
+      <br />
+      <input type="text" id="element_beta" />
+      <br />
+      <p>
+        When the input is focused by the user, the animation will reset,
+        allowing the user to enter a query. <br />
+        <br />
+        When the user leaves the input, the animation will reset, but only if
+        there wasn't any text entered.
+      </p>
+      <div></div>
+      <span id="element"></span>
+    </div>
+    <div></div>
+    <div class="container">
+      <button id="myButton">Click</button>
+      <h3 id="text_input"></h3>
+    </div>
+  </body>
+</html>

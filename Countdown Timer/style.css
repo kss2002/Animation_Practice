@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+section {
+  background-color: greenyellow;
+  padding: 6rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.countdown {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  margin: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
