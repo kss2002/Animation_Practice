@@ -1,0 +1,60 @@
+/* addEventListener classList add */
+.modal.on {
+  display: block;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.modal {
+  display: none; /* 평상시에는 안 보임 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+  /* rgba의 마지막 값은 투명도를 뜻함 */
+}
+
+.modal__popUP {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.close__button {
+  display: block;
+  font-weight: 600;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-color: royalblue;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.open__button {
+  display: block;
+  font-weight: 600;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-color: royalblue;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
