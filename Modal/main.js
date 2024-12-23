@@ -2,6 +2,11 @@
 const modal = document.querySelector('#Modal');
 const modalOpen = document.querySelector('#Open-button');
 const modalClose = document.querySelector('#Close-button');
+const modalOpen__beta = document.querySelector('#Open-button-beta');
+
+modalOpen__beta.addEventListener('click', function () {
+  modal.classList.add('on');
+});
 
 modalOpen.addEventListener('click', function () {
   modal.classList.add('on');

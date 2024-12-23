@@ -18,6 +18,7 @@ h3 {
   overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
   /* rgba의 마지막 값은 투명도를 뜻함 */
+  z-index: 10;
 }
 
 .modal__popUP {
@@ -26,7 +27,7 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  background: #ffffff;
+  background-color: white;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -36,10 +37,9 @@ h3 {
   font-weight: 600;
   margin: 40px auto;
   padding: 10px 20px;
-  background-color: royalblue;
+  background-color: #fee6e3;
   border: 2px solid black;
   border-radius: 5px;
-  color: #fff;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -50,11 +50,110 @@ h3 {
   font-weight: 600;
   margin: 40px auto;
   padding: 10px 20px;
-  background-color: royalblue;
+  background-color: #fee6e3;
   border: 2px solid black;
   border-radius: 5px;
-  color: #fff;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: 50vh;
+  background-color: black;
+  color: white;
+
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.back:hover {
+  background-color: rgba(240, 46, 170, 0.4);
+  color: black;
+}
+
+.position {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
